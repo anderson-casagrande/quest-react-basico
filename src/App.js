@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import TextoColorido from './Components/TextoColorido';
+import BotaoAlerta from './Components/BotaoAlerta';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <p><TextoColorido text="Primeiro Teste" color='blue' /></p>
+      <p><TextoColorido text="Esse é o segundo experimento" color='red' /></p>
+      <p><TextoColorido text="E aqui é o último texto" color='green' /></p>
+
+      <BotaoAlerta label="Baixar CV" />
+
     </div>
   );
 }
